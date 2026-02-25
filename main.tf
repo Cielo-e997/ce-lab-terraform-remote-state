@@ -1,6 +1,5 @@
 terraform {
   required_version = ">= 1.6.0"
-
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -10,14 +9,14 @@ terraform {
 }
 
 provider "aws" {
-  region = var.aws_region
+  region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "${var.project_name}-example-bucket"
+  bucket = "cielo-170638199494-example-bucket"
 
   tags = {
-    Name        = "${var.project_name}-bucket"
-    Environment = var.environment
+    Name        = "cielo-170638199494-bucket"
+    Environment = "dev"
   }
 }
