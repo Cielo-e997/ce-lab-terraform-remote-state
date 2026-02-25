@@ -1,0 +1,5 @@
+S3 Bucket: cielo-terraform-state-170638199494
+Region: us-east-1
+Versioning: Enabled
+Encryption: AES256
+Public Access: Blocked

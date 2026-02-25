@@ -1,0 +1,4 @@
+DynamoDB Table: terraform-state-locks
+Partition Key: LockID (String)
+Billing Mode: PAY_PER_REQUEST
+Purpose: Terraform state locking
